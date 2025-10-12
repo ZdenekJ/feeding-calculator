@@ -1,0 +1,30 @@
+{
+  "id": "starvita-stenata-mountfield",
+  "name": "Starvita pro štěnata - Mountfield",
+  "species": ["puppy"],
+  "axes": {
+    "weight": {
+      "unit": "kg",
+      "values": [1, 2, 5, 10, 15, 20, 25, 30, 35, 40, 50, 60, 70]
+    },
+    "age": { "unit": "months", "values": [2, 4, 6, 9, 12, 15, 18] }
+  },
+  "grid": {
+    "valueUnit": "g/day",
+    "values": [
+      [55, 90, 180, 305, 415, 515, 610, 695, null, null, null, null, null],
+      [45, 75, 165, 280, 380, 470, 555, 635, 715, 790, null, null, null],
+      [35, 70, 135, 255, 345, 425, 505, 580, 650, 715, 848, null, null],
+      [30, 50, 95, 205, 275, 385, 455, 520, 585, 645, 765, 875, null],
+      [30, 50, 95, 160, 215, 340, 405, 465, 520, 575, 680, 780, 875],
+      [30, 50, 95, 160, 215, 270, 375, 365, 465, 515, 605, 695, 780],
+      [30, 50, 95, 160, 215, 270, 320, 365, 410, 450, 535, 615, 690]
+    ]
+  },
+  "presentation": {
+    "orientation": "cols-age_rows-weight"
+  },
+  "source": null,
+  "version": "1.0.0",
+  "lastUpdated": "2025-10-12"
+}

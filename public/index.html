@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppy Feeding Calculator</title>
+  <meta name="description" content="Offline-first puppy feeding calculator using bilinear interpolation">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="app-title">Puppy Feeding Calculator</h1>
+  </header>
+
+  <nav>
+    <a href="#calculation" data-page="calculation">Calculation</a>
+    <a href="#feeds" data-page="feeds">Feeds</a>
+    <a href="#settings" data-page="settings">Settings</a>
+  </nav>
+
+  <main id="content">
+    <div class="loading">Loading...</div>
+  </main>
+
+  <script type="module" src="/js/main.js"></script>
+  <script>
+    // Load tests if ?tests=1 is in URL
+    if (window.location.search.includes('tests=1')) {
+      const script = document.createElement('script');
+      script.type = 'module';
+      script.src = '/tests.js';
+      document.head.appendChild(script);
+    }
+  </script>
+</body>
+</html>
